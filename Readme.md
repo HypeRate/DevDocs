@@ -12,6 +12,10 @@ At the said weekend we will switch some DNS entries and let all the traffic rout
 
 **Only use the new domain for testing purposes - it won't be accessible after said weekend.**
 
+## I don't have a compatible device! What should I do?
+
+The new API sends sends a random heartbeat between 1 and 10 every second to the `internal-testing` device id.
+
 ## Old API
 
 URL: `wss://app.hyperate.io/socket/websocket`
@@ -28,13 +32,24 @@ Authentication: Websocket key required
 
 ### Join Channel
 
-You need to join the appropiate channel fefore any data will be send to your client.
+You need to join the appropiate channel before any data will be send to your client.
 
 To do this you need to send the following JSON message:
 
 ```json
 {
   "topic": "hr:<ID>",
+  "event": "phx_join",
+  "payload": {},
+  "ref": 0
+}
+```
+
+This would be the correct message to join the "internal-testing" channel:
+
+```json
+{
+  "topic": "hr:internal-testing",
   "event": "phx_join",
   "payload": {},
   "ref": 0
