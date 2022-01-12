@@ -24,7 +24,7 @@ Authentication: None required
 
 ## New API
 
-URL: `wss://app.hyperate.io/socket/websocket?token=<MY-WEBSOCKET-KEY>`
+URL: `wss://staging.frightrate.com/socket/websocket?token=<MY-WEBSOCKET-KEY>`
 
 Authentication: Websocket key required
 
