@@ -12,7 +12,7 @@ The API sends sends a random heartbeat between 60 and 80 every second to the
 
 ## Connecting to the API
 
-URL: `wss://staging.frightrate.com/socket/websocket?token=<MY-WEBSOCKET-KEY>`
+URL: `wss://app.hyperate.io/socket/websocket?token=<MY-WEBSOCKET-KEY>`
 
 ## Required websocket messages
 
