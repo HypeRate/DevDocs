@@ -45,13 +45,37 @@ This would be the correct message to join the "internal-testing" channel:
 
 ### Send heartbeat
 
-Phoenix expects that you send the heartbeat every 30 seconds otherwise the
+Phoenix expects that you send the heartbeat every 15 seconds otherwise the
 connection will be closed.
 
 ```json
 {
 	"topic": "phoenix",
 	"event": "heartbeat",
+	"payload": {},
+	"ref": 0
+}
+```
+
+### Leave channel
+
+In case you only want to leave a joined channel you can send the following message:
+
+```json
+{
+	"topic": "hr:<ID>",
+	"event": "phx_leave",
+	"payload": {},
+	"ref": 0
+}
+```
+
+This would be the correct message to leave the "internal-testing" channel:
+
+```json
+{
+	"topic": "hr:internal-testing",
+	"event": "phx_leave",
 	"payload": {},
 	"ref": 0
 }
