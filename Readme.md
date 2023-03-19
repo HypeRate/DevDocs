@@ -45,7 +45,7 @@ This would be the correct message to join the "internal-testing" channel:
 
 ### Send heartbeat
 
-Phoenix expects that you send the heartbeat every 15 seconds otherwise the
+Phoenix expects that you send the heartbeat every 10 seconds otherwise the
 connection will be closed.
 
 ```json
