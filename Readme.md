@@ -1,13 +1,13 @@
 # HypeRate DevDocs
 
-## Getting a API key
+## Getting an API key
 
 You need to request your websocket key on our
 [Discord](https://discord.gg/75jcqvuHAH) through the ticket system.
 
 ## I don't have a compatible device! What should I do?
 
-The API sends sends a random heartbeat between 60 and 80 every second to the
+The API sends a random heartbeat between 60 and 80 every second to the
 `internal-testing` device id.
 
 ## Connecting to the API
@@ -18,7 +18,7 @@ URL: `wss://app.hyperate.io/socket/websocket?token=<MY-WEBSOCKET-KEY>`
 
 ### Join Channel
 
-You need to join the appropiate channel before any data will be send to your
+You need to join the appropiate channel before any data will be sent to your
 client.
 
 To do this you need to send the following JSON message:
@@ -45,7 +45,7 @@ This would be the correct message to join the "internal-testing" channel:
 
 ### Send heartbeat
 
-Phoenix expects that you send the heartbeat every 10 seconds otherwise the
+Phoenix expects that you send a client heartbeat every 10 seconds otherwise the
 connection will be closed.
 
 ```json
