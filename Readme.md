@@ -3,7 +3,7 @@
 ## Getting a API key
 
 You need to request your websocket key on our
-[Discord](https://discord.gg/75jcqvuHAH) through the ticket system.
+[Webpage](https://www.hyperate.io/api).
 
 ## I don't have a compatible device! What should I do?
 
